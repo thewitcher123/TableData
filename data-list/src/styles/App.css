@@ -1,0 +1,27 @@
+.wideModal {
+    width: 90%;
+}
+.modal-header {
+    position: relative;
+}
+.modal-body {
+    height: 500px;
+    overflow-y: auto;
+}
+textarea {
+    width: 90%;
+    height: 200px;
+    resize: none;
+}
+
+#close-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+.list-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
