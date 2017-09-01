@@ -7,9 +7,9 @@ class Footer extends React.Component {
                 <div className="container-fluid">
                     <ul className="nav navbar-nav">
                         <li className="active"><a href="#">Home</a></li>
-                        <li><a href="#">Page 1</a></li>
-                        <li><a href="#">Page 2</a></li>
-                        <li><a href="#">Page 3</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Projects</a></li>
                     </ul>
                 </div>
             </nav>
