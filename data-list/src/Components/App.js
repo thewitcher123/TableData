@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import JournalData from './JournalData';
+import Footer from './Footer';
 import TableData from './TableData';
 import './../styles/App.css';
 
@@ -12,6 +13,7 @@ class App extends Component {
             <div className="App">
                 <h1 className="list-title">Акты об оказании услуг</h1>
                 <TableData data={data} />
+                <Footer/>
             </div>
         );
     }

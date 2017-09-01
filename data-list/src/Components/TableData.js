@@ -11,10 +11,22 @@ class TableData extends React.Component {
         const cellEditProp = {
             mode: 'click'
         };
+        const options = {
+            page: 1,  // which page you want to show as default
+            hideSizePerPage: true,
+            sizePerPage: 10,
+            pageStartIndex: 1,
+            paginationSize: 3
+        };
         return (
-            <BootstrapTable data={this.props.data} cellEdit={cellEditProp} striped hover>
+            <BootstrapTable className="myTable"
+                            data={this.props.data}
+                            cellEdit={cellEditProp}
+                            pagination={true} options={options}
+                            striped hover>
                 <TableHeaderColumn dataField="Id" isKey hidden>Идентификатор</TableHeaderColumn>
                 <TableHeaderColumn
+                    customEditor={{ getElement: createModal }}
                     headerAlign='center' dataAlign='center'
                     dataField="Date">Дата документа</TableHeaderColumn>
                 <TableHeaderColumn headerAlign='center' dataAlign='center'

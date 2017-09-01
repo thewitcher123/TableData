@@ -5,16 +5,24 @@ import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 
 function activeFormatter(cell, row) {
     return (
-        <ActiveFormatter active={ cell } />
+        <ActiveFormatter active={ cell }/>
     );
 }
 
 
 class ModalTable extends React.Component {
     render() {
+        const options = {
+            page: 1,  // which page you want to show as default
+            hideSizePerPage: true,
+            sizePerPage: 5,
+            pageStartIndex: 1,
+            paginationSize: 3
+        };
         return (
             <div className='modal-body'>
-                <BootstrapTable data={this.props.data} striped hover>
+                <BootstrapTable data={this.props.data}
+                                pagination={true} options={options} striped hover>
                     <TableHeaderColumn dataField="FinanceActId" isKey hidden>Id</TableHeaderColumn>
                     <TableHeaderColumn dataField="Description" headerAlign='center'
                                        tdStyle={ { whiteSpace: 'normal' } }
