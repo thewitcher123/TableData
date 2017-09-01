@@ -37,7 +37,7 @@ class ModalTable extends React.Component {
                     <TableHeaderColumn dataField="TaxRate" headerAlign='center' dataAlign='center'
                                        width='50'>Ставка НДС</TableHeaderColumn>
                     <TableHeaderColumn dataField="TaxAmount" headerAlign='center' dataAlign='center'
-                                       width='50'>Ставка НДС</TableHeaderColumn>
+                                       width='50'>Сумма НДС</TableHeaderColumn>
                     <TableHeaderColumn dataField="IsDeleted"
                                        dataFormat={ activeFormatter } headerAlign='center' dataAlign='center'
                                        width='50'>Неактуально</TableHeaderColumn>
