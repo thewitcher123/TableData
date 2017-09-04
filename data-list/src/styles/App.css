@@ -37,3 +37,8 @@ textarea {
     display: inline-block;
     float:none;
 }
+
+.myTable {
+    width: 99%;
+    padding-left: 10px
+}

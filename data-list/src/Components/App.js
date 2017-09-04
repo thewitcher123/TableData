@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import JournalData from './JournalData';
+import JournalData from './../data/JournalData';
 import Footer from './Footer';
 import TableData from './TableData';
 import './../styles/App.css';
