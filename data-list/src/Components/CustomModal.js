@@ -1,6 +1,5 @@
 import React from 'react';
 import ModalTable from './ModalTable';
-//import PropTypes from 'prop-types';
 
 class CustomModal extends React.Component {
     constructor(props) {
@@ -39,9 +38,5 @@ class CustomModal extends React.Component {
         );
     }
 }
-/*CustomModal.propTypes = {
-    onUpdate: PropTypes.func.isRequired,
-    row: PropTypes.object.isRequired
-};*/
 
 export default CustomModal;
