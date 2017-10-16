@@ -3,7 +3,7 @@ import React from 'react';
 class Footer extends React.Component {
     render() {
         return (
-            <nav className="navbar navbar-fixed-bottom">
+            <nav className="navbar navbar-bottom">
                 <div className="container-fluid">
                     <ul className="nav navbar-nav">
                         <li className="active"><a href="#">Home</a></li>
